@@ -1,0 +1,41 @@
+.navmenu {
+  background-color: var(--clr-accent-400);
+  position: absolute;
+  width: 100%;
+  padding: 0 1em 0.5em;
+
+  transform-origin: top;
+}
+
+.navmenu--closed {
+  transition: transform 300ms 400ms ease-out;
+  transform: scaleY(0);
+}
+
+.navmenu--open {
+  transition: transform 400ms ease-out;
+  transform: scaleY(100%);
+}
+
+.navmenu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu li {
+  display: block;
+  position: relative;
+}
+
+.navmenu--closed li {
+  transition: opacity ease-in-out 400ms;
+  opacity: 0;
+}
+
+.navmenu--open li {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out 400ms;
+}

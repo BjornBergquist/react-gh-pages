@@ -6,10 +6,9 @@ import { HomeView } from '../Views/HomeView'
 import { SignInView } from '../Views/SignInView'
 
 
-export const Routing = (props) => {
+export const Routing = () => {
     return (
         <Router>
-            {props.children}
             <Switch>
                 <Route exact path="/react-gh-pages/fizzbuzz" component={FizzBuzzView}/>
                 <Route exact path="/react-gh-pages/signin" component={SignInView}/>

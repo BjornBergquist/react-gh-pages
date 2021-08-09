@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Burger } from '../HamburgerMenu/Burger'
+import { NavMenu } from '../NavMenu/NavMenu';
 import './NavBar.css'
 
+
 export const NavBar = () => {
+    const [open, setOpen] = useState(false);
     return (
-        <div>
-            <span>Home</span>
-            <span>FizzBuzz</span>
-            <span>HighScore</span>
-            <span>SignIn</span>
-        </div>
+        <React.Fragment>
+            <nav className="navbar">
+                <div className="navbar--header">
+                    <h2>LogoType</h2> 
+                    <Burger open={open} setOpen={setOpen}/>
+                </div>
+            </nav>
+            <NavMenu open={open}/>
+        </React.Fragment>
     )
 }
