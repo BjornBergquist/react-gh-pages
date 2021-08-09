@@ -6,6 +6,7 @@ export const NavBar = () => {
         <div>
             <span>Home</span>
             <span>FizzBuzz</span>
+            <span>HighScore</span>
             <span>SignIn</span>
         </div>
     )
