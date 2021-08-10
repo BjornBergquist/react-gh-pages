@@ -4,6 +4,7 @@
   --clr-primary: #333;
   --clr-secondary: white;
   --clr-accent-400: hsl(265, 50%, 50%);
+  --clr-accent-200: hsl(265, 70%, 80%);
 }
 
 *,
@@ -38,4 +39,27 @@ footer {
   background-color: var(--clr-accent-400);
   text-align: center;
   padding-top: 1em;
+}
+
+.btn {
+  display: inline-block;
+  border: 2px solid var(--clr-secondary);
+  padding: 0.35rem 0.75rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  background-color: var(--clr-accent-400);
+  color: var(--clr-secondary);
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.5em;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-accent-200);
+}
+
+.btn:active {
+  transform: scale(0.99);
 }

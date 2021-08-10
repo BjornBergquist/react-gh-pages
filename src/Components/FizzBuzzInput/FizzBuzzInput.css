@@ -1,0 +1,14 @@
+.fzcontrol {
+  margin-block: 1em;
+  display: grid;
+  grid-template-columns: 1fr max(15%, 5em);
+  gap: 1em;
+}
+
+.fzcontrol__input {
+  border-radius: 0.5em;
+}
+
+.fzcontrol .btn {
+  margin: 0;
+}

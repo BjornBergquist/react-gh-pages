@@ -25,11 +25,11 @@
   height: var(--burger-height);
   background-color: var(--clr-secondary);
   border-radius: 1em;
-  transition: transform 400ms ease, opacity 400ms ease 200ms;
+  transition: transform 400ms linear, opacity 400ms ease 200ms;
 }
 
 .burger--open .burger--bar {
-  transition: transform 400ms ease 200ms, opacity 600ms ease;
+  transition: transform 400ms linear 200ms, opacity 600ms ease;
 }
 
 .burger--open .burger__top {
